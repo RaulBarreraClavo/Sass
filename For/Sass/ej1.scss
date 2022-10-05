@@ -1,0 +1,27 @@
+@for $i from 1 through 3 {
+    .item-#{$i} { width: 2em * $i; }
+  }
+  @for $i from 1 to 3 {
+    .items-#{$i} { width: 2em * $i; }
+  }
+$animales:puma, sea-slug, egret, salamander;
+  @each $animal in $animales {
+    .#{$animal}-icon {
+      background-image: url('/images/#{$animal}.png');
+    }
+  }
+
+
+@each $animal, $color, $cursor in (puma, black, default),(sea-slug, blue, pointer),(egret, white, move) {
+        .#{$animal}-icon {
+        background-image: url('/images/#{$animal}.png');
+        border: 2px solid $color;
+        cursor: $cursor;
+    }
+}
+
+$i: 6;
+@while $i > 0 {
+  .item-#{$i} { width: 2em * $i; }
+  $i: $i - 2;
+}

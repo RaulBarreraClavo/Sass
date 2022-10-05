@@ -1,0 +1,40 @@
+@import "colores.scss";
+div{
+    width: 40%;
+    margin: 20px;
+    float:inline-start
+  
+}
+input{
+    border-color: $borde-input;
+    color: $texto;
+
+}
+.exito{
+    border-color: $exito;
+    color: $texto;
+    
+}
+.focus {
+    color: $texto;
+    :hover{
+        border-color: $focus;
+      
+    }
+    
+}
+.error {
+    border-color: $error;
+    color: $texto;
+}
+.disabled{
+    background-color: $borde-input;
+    color: $texto;
+}
+.caja{
+    width: 100px;
+    height: 100px;
+}
+label{
+    font-size: 12px;
+}

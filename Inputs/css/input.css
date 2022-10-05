@@ -1,0 +1,41 @@
+div {
+  width: 40%;
+  margin: 20px;
+  float: inline-start;
+}
+
+input {
+  border-color: #acacac;
+  color: black;
+}
+
+.exito {
+  border-color: #87ff00;
+  color: black;
+}
+
+.focus {
+  color: black;
+}
+.focus :hover {
+  border-color: #894200;
+}
+
+.error {
+  border-color: #ff0000;
+  color: black;
+}
+
+.disabled {
+  background-color: #acacac;
+  color: black;
+}
+
+.caja {
+  width: 100px;
+  height: 100px;
+}
+
+label {
+  font-size: 12px;
+}/*# sourceMappingURL=input.css.map */

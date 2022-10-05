@@ -1,0 +1,28 @@
+@import "colores.scss";
+
+@each $nombre,$color in $colors{
+  
+    .color-#{$nombre} {
+        background-color: $color;
+        }
+    
+}
+button{
+    color: $texto;
+    width: 80px;
+    height: 40px;
+    :disabled{
+        background-color: $deshabilitado;
+        color: black;
+    }
+}
+.ovalo{
+    border-radius: 20%;
+}
+.texto-negro{
+    color: black;
+}
+.hover:hover{
+    background-color: red;
+}
+

@@ -1,0 +1,32 @@
+$sizes: 40px,50px,80px;
+@each $size in $sizes{
+    p-#{$size}{
+        height: $size;
+    }
+}
+
+$icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f");
+
+@each $name, $glyph in $icons {
+  .icon-#{$name}:before {
+    display: inline-block;
+    font-family: "Icon Font";
+    content: $glyph;
+  }
+}
+
+p {
+    $font-size: 12px;
+    $line-height: 30px;
+    font: (#{$font-size}/#{$line-height});
+  }
+
+
+
+
+
+
+
+
+
+

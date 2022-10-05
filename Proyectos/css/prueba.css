@@ -1,0 +1,8 @@
+#main p {
+  color: aqua;
+  width: 97%;
+}
+#main p .redbox {
+  background-color: red;
+  color: rgb(255, 255, 255);
+}/*# sourceMappingURL=prueba.css.map */

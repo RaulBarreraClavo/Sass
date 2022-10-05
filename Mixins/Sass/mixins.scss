@@ -1,0 +1,29 @@
+@import"enlaces";
+@import"bordes";
+@mixin large-text {
+    font: {
+      family: Arial;
+      size: 20px;
+      weight: bold;
+    }
+    color: #ff0000;
+  }
+  .page-title {
+    @include large-text;
+    @include silly-links;
+    padding: 4px;
+    margin-top: 10px;
+  }
+  @include silly-links;
+  
+  p { @include sexy-border(blue, 10px); }
+
+  $values: #ff0000, #00ff00, #0000ff;
+.primary {
+  @include colors($values...);
+}
+$value-map: (text: #00ff00, background: #00a2ff, border: #ff0000);
+.secondary {
+  @include colors($value-map...);
+}
+ 

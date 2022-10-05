@@ -1,0 +1,22 @@
+$saludo:"Hola";
+$indice:str-index($saludo ,"o");
+$tamaño:str-length($saludo );
+/*Comentario que se compila*/
+p{
+    width: $tamaño px;
+    font-size: $indice px;
+    height: random($limit: 6)*10px;
+    
+}
+
+$lista:5,10,15,20;
+
+@for $i from 1 to length($lista){
+    .espacio-#{$i}{
+        width:$i px;
+    }
+}
+
+
+
+

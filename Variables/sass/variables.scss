@@ -1,0 +1,36 @@
+//Variables
+@import "valores.scss";
+
+div{
+    margin: 15px;
+}
+.formato{
+    background-color: $color-primario;
+    width: $ancho ;
+    height: $alto;
+    padding: $padding;
+    a{
+        color: aliceblue;
+        text-decoration: underline;
+        &:hover{
+            color: red;
+           text-decoration: none;
+        }
+
+    }
+}
+.primaria{
+    @extend .formato;
+    background-color: bisque;
+    color: rgb(245, 22, 22);
+   
+}
+.secundaria{
+    @extend .formato;
+}
+.terciaria{
+    @extend .formato;
+    a{
+        color: black;
+    }
+}

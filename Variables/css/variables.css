@@ -1,0 +1,27 @@
+div {
+  margin: 15px;
+}
+
+.formato, .terciaria, .secundaria, .primaria {
+  background-color: aqua;
+  width: 200px;
+  height: 100px;
+  padding: 50px;
+}
+.formato a, .terciaria a, .secundaria a, .primaria a {
+  color: aliceblue;
+  text-decoration: underline;
+}
+.formato a:hover, .terciaria a:hover, .secundaria a:hover, .primaria a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.primaria {
+  background-color: bisque;
+  color: rgb(245, 22, 22);
+}
+
+.terciaria a {
+  color: black;
+}/*# sourceMappingURL=variables.css.map */
