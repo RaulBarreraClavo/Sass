@@ -9,7 +9,7 @@
 }
 button{
     color: $texto;
-    width: 80px;
+    width: 100px;
     height: 40px;
     :disabled{
         background-color: $deshabilitado;
@@ -17,12 +17,23 @@ button{
     }
 }
 .ovalo{
-    border-radius: 20%;
+    border-radius: 35%;
 }
 .texto-negro{
     color: black;
 }
 .hover:hover{
     background-color: red;
+}
+.pequenio{
+    width: 40px;
+   
+}
+.circulo{
+    border-radius: 50%;
+}
+.icono{
+
+    font-size: 15px;
 }
 
